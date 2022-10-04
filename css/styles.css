@@ -1,0 +1,118 @@
+header {
+    background-color: #612E85;
+    padding: 0px 0px 70px 0px;
+}
+
+body {
+    background-color: #4E0880;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 10px 10px 10px;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+p.gallery_text {
+    font-family: Tahoma;
+    font-size: 16px;
+    margin: 10px 5px 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    display: block;
+}
+
+footer {
+    font-family: Tahoma;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+    margin: 5px;
+    color: #FFFFFF;
+}
+
+.active {
+    font-family: Tahoma;
+    margin: 0px 50px 0px;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    padding: 25px 10px 27px;
+    background-color: #4E0880;
+}
+
+.nav_item {
+    color: #000000;
+    font-family: Tahoma;
+    margin: 0px 50px 0px;
+    font-size: large;
+    padding: 25px 10px 25px;
+}
+
+.skip {
+    float: right;
+}
+
+a:link, a:visited {
+    font-family: Tahoma;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    font-family: Arial;
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: None;
+    margin: 0px;
+    padding: 0px 0px 70px;
+    float: left;
+}
+
+img {
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border: 5px solid #E2A7F2;
+}
+
+img:hover {
+    box-shadow: 5px 5px 5px #E2A7F2;
+}
+
+.gallery_img {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    margin: 0px;
+    border: 5px solid #E2A7F2;
+}
+
+figcaption {
+    font-family: Tahoma;
+    font-size: small;
+    font-style: italic;
+    color: #E2A7F2;
+    text-shadow: 1px 1px #000000;
+    display: inline-block;
+    width: 300px;
+    padding: 5px 0px 0px 0px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
