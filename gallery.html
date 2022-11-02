@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN5WPXXKTR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XN5WPXXKTR');
+        </script>
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <title>Gallery</title>
         <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="ggrid_container">
         <header>
             <nav>
-                <ul>
+                <ul class="site-nav">
                     <li class="nav_item"><a href="index.html">Home</a></li>
                     <li class="nav_item"><a href="amd.html">Azumanga Daioh</a></li>
                     <li class="nav_item"><a href="danganronpa.html">Danganronpa</a></li>
@@ -25,43 +37,55 @@
                 Here on this gallery page, as a refresher from all the translation notes, I have collected a grouping of photos from my
                 time living in Japan from summer 2018 to summer 2020.
             </p>
-            <div class="grid-container">
-                <figure>
-                    <img class="gallery_img" src="images/gasakusastreet.jpeg" alt="Twilight view of Asakusa side street">
-                    <figcaption class="grid-item">A side street in the Asakusa district of Tokyo</figcaption>
+            <div class="gflex-container">
+                <figure class="gallery_img">
+                    <img src="images/gasakusastreet.jpeg" alt="Twilight view of Asakusa side street">
+                    <figcaption class="gflex-item">A side street in the Asakusa district of Tokyo</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gfuji.jpeg" alt="Long-distance shot of Mt. Fuji">
-                    <figcaption class="grid-item">Mt. Fuji as seen from a rest-stop on the highway in Shizuoka Prefecture</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gfuji.jpeg" alt="Long-distance shot of Mt. Fuji">
+                    <figcaption class="gflex-item">Mt. Fuji as seen from a rest-stop on the highway in Shizuoka Prefecture</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gfushimiinari.jpeg" alt="Picture with several red Torii gates and mountain views in Kyoto">
-                    <figcaption class="grid-item">A couple of the thousands of Torii gates at Fushimi Inari in Kyoto</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gfushimiinari.jpeg" alt="Picture with several red Torii gates and mountain views in Kyoto">
+                    <figcaption class="gflex-item">A couple of the thousands of Torii gates at Fushimi Inari in Kyoto</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gminamiosawa.jpeg" alt="Minami-Osawa station platform looking out over hills at sunset">
-                    <figcaption class="grid-item">A view from the platform of Minami-Osawa station in Hachioji, near my apartment</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gminamiosawa.jpeg" alt="Minami-Osawa station platform looking out over hills at sunset">
+                    <figcaption class="gflex-item">A view from the platform of Minami-Osawa station in Hachioji</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gosakacastle.jpeg" alt="The outside of Osaka castle framed through hanging flowers">
-                    <figcaption class="grid-item">Osaka Castle in spring with cherry blossoms in full bloom</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gosakacastle.jpeg" alt="The outside of Osaka castle framed through hanging flowers">
+                    <figcaption class="gflex-item">Osaka Castle in spring with cherry blossoms in full bloom</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gsakura.jpeg" alt="A street light with a flowering cherry blossom tree">
-                    <figcaption class="grid-item">A park of sakura blossoms in full bloom near my bus stop in Hachioji</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gsakura.jpeg" alt="A street light with a flowering cherry blossom tree">
+                    <figcaption class="gflex-item">A park of sakura blossoms in full bloom near my bus stop in Hachioji</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gtokyotower.jpeg" alt="A picture of the Tokyo skyline from the top of Tokyo Tower">
-                    <figcaption class="grid-item">A bird's eye view from Tokyo Tower, the tallest structure in Japan, of the city's spread into the distance</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gtokyotower.jpeg" alt="A picture of the Tokyo skyline from the top of Tokyo Tower">
+                    <figcaption class="gflex-item">A bird's eye view from Tokyo Tower, the tallest structure in Japan</figcaption>
                 </figure>
-                <figure>
-                    <img class="gallery_img" src="images/gwaterfall.jpeg" alt="A picture of me with a large waterfall in the background">
-                    <figcaption class="grid-item">Me in front of the Kegon waterfall in the mountain town of Nikko, north of Tokyo</figcaption>
+                <figure class="gallery_img">
+                    <img src="images/gwaterfall.jpeg" alt="A picture of me with a large waterfall in the background">
+                    <figcaption class="gflex-item">Me in front of the Kegon waterfall in the mountain town of Nikko</figcaption>
                 </figure>
             </div>
         </main>
+        <form action="https://formspree.io/f/mdojpywv" method="POST" class="contact_form">
+            <label>
+                Your email:
+                <input type="email" name="email">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+        </form>
         <footer>
-            Joel Liesenberg (he/him/his), University of Michigan School of Information/Center for Japanese Studies, 2022
+            <p class="footer_text">Joel Liesenberg (he/him/his), University of Michigan School of Information/Center for Japanese Studies, 2022</p>
         </footer>
     </body>
 </html>
