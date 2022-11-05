@@ -8,6 +8,14 @@ header {
     justify-content: center;
 }
 
+.fa-brands {
+    color: #FFFFFF;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 .nav_item {
     color: #000000;
     font-family: Tahoma;
@@ -21,6 +29,18 @@ header {
     position: relative;
     right: 5000px;
     bottom: 500px;
+}
+
+.skip:focus {
+    top: 0px;
+    left: 0px;
+    bottom: 50px;
+    right: 50px;
+    padding: 0px;
+    z-index: 1;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
 }
 
 .active {
@@ -53,7 +73,7 @@ body {
 
 h1 {
     color: #FFFFFF;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     text-decoration: underline;
     margin: 10px 10px 10px;
@@ -62,7 +82,7 @@ h1 {
 
 p {
     color: #FFFFFF;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 32px;
     margin: 10px 5px 10px;
     padding: 10px;
@@ -70,7 +90,7 @@ p {
 }
 
 p.gallery_text {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     margin: 10px 5px 10px;
     padding: 10px;
@@ -82,12 +102,12 @@ p.gallery_text {
 img {
     border: 5px solid #E2A7F2;
     max-height: 600px;
-    width: 100%;
+    max-width: 400px;
     max-height: 600px;
     width: auto;
     padding: 5px;
     margin: 0px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 figcaption {
@@ -95,14 +115,14 @@ figcaption {
     font-family: Tahoma;
     font-size: small;
     font-style: italic;
-    color: #E2A7F2;
+    color: #FFFFFF;
     text-shadow: 1px 1px #000000;
     padding: 10px;
 }
 
 aside {
     color: #565259;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding: 10px;
     margin: 10px;
@@ -119,6 +139,7 @@ img:hover {
 .lgrid_container {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: #4E0880;
 }
 
 .lgrid_main {
@@ -126,6 +147,49 @@ img:hover {
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
+}
+
+.dgrid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #4E0880;
+}
+
+.dgrid_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.agrid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #4E0880;
+}
+
+.agrid_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.igrid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #4E0880;
+}
+
+.igrid_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.g_h1 {
+    text-align: center;
 }
 
 .gflex-container {
@@ -152,14 +216,18 @@ img:hover {
     padding: 10px;
 }
 
+.contact_form {
+    color: #FFFFFF
+}
+
 footer {
     text-align: center;
     background: url('../images/gsakura.jpeg') #4E0880;
 }
 
 .footer_text {
-    font-family: 'Raleway' sans-serif;
-    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
     font-weight: bold;
     padding: 5px;
     margin: 5px;
@@ -167,7 +235,8 @@ footer {
     background-color: #E2A7F2;
 }
 
-@media all and (min-width: 800px) {
+/* Starting media query code for after mobile checkpoint, commented out for this checkpoint */
+/* @media all and (min-width: 800px) {
   
     .dgrid_container {
         display: grid;
@@ -250,5 +319,20 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+} */
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    html {
+        animation: none;
     }
 }
