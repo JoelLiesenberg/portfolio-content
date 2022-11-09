@@ -82,6 +82,7 @@ h1 {
 
 p {
     color: #FFFFFF;
+    background-color: #4E0880;
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
     margin: 10px 5px 10px;
@@ -118,6 +119,7 @@ figcaption {
     color: #FFFFFF;
     text-shadow: 1px 1px #000000;
     padding: 10px;
+    background-color: #4E0880;
 }
 
 aside {
