@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/5067bec04e.js" crossorigin="anonymous"></script>
-        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN5WPXXKTR"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -12,6 +9,8 @@
 
             gtag('config', 'G-XN5WPXXKTR');
         </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/5067bec04e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <title>Gallery</title>
@@ -74,14 +73,19 @@
                     <figcaption class="gflex-item">Me in front of the Kegon waterfall in the mountain town of Nikko</figcaption>
                 </figure>
             </div>
-            <form action="https://formspree.io/f/mdojpywv" method="POST" class="contact_form">
-                <label><p>Your email:</p><input type="email" name="email"></label>
-                <label><p>Your message:</p><textarea name="message"></textarea></label>
-                <button type="submit">Send</button>
-            </form>
+            <div class="form_container">
+                <p class="form_title">Contact Me!</p>
+                <form action="https://formspree.io/f/mdojpywv" onsubmit="return checkForm()" method="POST" class="contact_form">
+                    <label><p class="form_text">Name:</p><input id="name" type="text" name="name"></label>
+                    <label><p class="form_text">Email:</p><input id="email" type="email" name="email"></label>
+                    <label><p class="form_text">Message:</p><textarea id="message" name="message"></textarea></label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </main>
         <footer>
             <p class="footer_text">Joel Liesenberg (he/him/his), University of Michigan School of Information/Center for Japanese Studies, 2022</p>
         </footer>
+        <script src="js/javascript.js"></script>
     </body>
 </html>
